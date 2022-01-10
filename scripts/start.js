@@ -26,6 +26,13 @@ window.onload = function() {
       alert("You won't be able to interact with the form until you refresh the page");
     }
   }
+
+  //input
+  var inputs = document.getElementsByTagName('input');
+  for (var i=0; i< inputs.length; i++){
+      inputs[i].onfocus = elemFocus;
+      inputs[i].onblur = elemNotFocus;
+  }
 }
 
 function parsCook(name) {
@@ -41,4 +48,18 @@ function parsCook(name) {
 
 function delete_cookie(name) {
   document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
+const elemFocus = function() {
+  let blocks = document.getElementsByClassName("_nb");
+  for (let i=0; i<6; i++) {
+    blocks[i].classList.add("_focusIs")
+  }
+}
+
+const elemNotFocus = function() {
+  let blocks = document.getElementsByClassName("_nb");
+  for (let i=0; i<6; i++) {
+    blocks[i].classList.remove("_focusIs")
+  }
 }
