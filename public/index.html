@@ -1,21 +1,8 @@
 <html>
 
 	<head>
-		<script>
-			window.onload = function() {
-				const queryString = window.location.search
-				const urlParams = new URLSearchParams(queryString)
-				const message = urlParams.get('message')
-				if (message) {
-					setTimeout(() => {
-						alert(message)
-					}, 500)
-				}
-			}
-		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles/main.css">
-		<link rel="stylesheet" href="styles/form.css">
 		<title>Orbital speed</title>
 	</head>
 
@@ -33,19 +20,6 @@
 					<li><a href="galaxy.html">Speed to exit the galaxy</a></li>
 					<li><a href="apparatus.html">Speed developing apparatus</a></li>
 				</ul>
-
-				<form method="POST" action="/form" id="form" class="formBody">
-					<h3>Send to email</h3>
-					<div class="formClass">
-						<label for="formName" class="formLabel">Name*:</label>
-						<input id="formName" type="text" name="name" class="formInput _req _name">
-					</div>
-					<div class="formClass">
-						<label for="formEmail" class="formLabel">E-mail*:</label>
-						<input id="formEmail" type="text" name="email" class="formInput _req _email">
-					</div>
-					<button type="submit" class="formButton">Send</button>
-				</form>
 
 			</aside>
 
