@@ -2,9 +2,10 @@
 
 	<head>
 		<script src="../scripts/start.js"></script>
-
+		<script src="../scripts/form.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/form.css">
 		<title>Orbital speed</title>
 	</head>
 
@@ -71,6 +72,52 @@
 	    					<area target="" alt="Pluto" title="Pluto" href="https://en.wikipedia.org/wiki/Pluto" coords="154,208,10" shape="circle">
 								<area target="" alt="Mars" title="Mars" href="https://en.wikipedia.org/wiki/Mars" coords="330,116,40" shape="circle">
 							</map>
+
+							<form onsubmit="return countForm(this)" id="form" class="formBody">
+							  <h3>Find min and max from:</h3>
+							  <div class="formClass">
+							    <label for="number1" class="formLabel">1:</label>
+							    <input id="number1" type="text" name="in1" class="formInput">
+							  </div>
+							  <div class="formClass">
+							    <label for="number2" class="formLabel">2:</label>
+							    <input id="number2" type="text" name="in2" class="formInput">
+							  </div>
+							  <div class="formClass">
+							    <label for="number3" class="formLabel">3:</label>
+							    <input id="number3" type="text" name="in3" class="formInput">
+							  </div>
+							  <div class="formClass">
+							    <label for="number4" class="formLabel">4:</label>
+							    <input id="number4" type="text" name="in4" class="formInput">
+							  </div>
+							  <div class="formClass">
+							    <label for="number5" class="formLabel">5:</label>
+							    <input id="number5" type="text" name="in5" class="formInput">
+							  </div>
+							  <div class="formClass">
+							    <label for="number6" class="formLabel">6:</label>
+							    <input id="number6" type="text" name="in6" class="formInput">
+							  </div>
+							  <div class="formClass">
+							    <label for="number7" class="formLabel">7:</label>
+							    <input id="number7" type="text" name="in7" class="formInput">
+							  </div>
+							  <div class="formClass">
+							    <label for="number8" class="formLabel">8:</label>
+							    <input id="number8" type="text" name="in8" class="formInput">
+							  </div>
+							  <div class="formClass">
+							    <label for="number9" class="formLabel">9:</label>
+							    <input id="number9" type="text" name="in9" class="formInput">
+							  </div>
+							  <div class="formClass">
+							    <label for="number10" class="formLabel">10:</label>
+							    <input id="number10" type="text" name="in10" class="formInput">
+							  </div>
+							  <button type="submit" class="formButton">Send</button>
+							</form>
+
 
 						</article>
 
