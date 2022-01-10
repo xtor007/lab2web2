@@ -3,7 +3,8 @@
 	<head>
 		<script src="../scripts/start.js"></script>
 		<script src="../scripts/form.js"></script>
-		<script src="../scripts/focus.js"></script>
+		<script src="../scripts/loadfiles.js"></script>
+		<script src="../scripts/storage.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles/main.css">
 		<link rel="stylesheet" href="styles/form.css">
@@ -119,12 +120,22 @@
 							  <button type="submit" class="formButton">Send</button>
 							</form>
 
+							<form onsubmit="return loadImg(this)" id="form2" class="formBody">
+								<div class="formClass">
+							    <label for="imgLink" class="formLabel">Image link</label>
+							    <input id="imgLink" type="text" name="link" class="formInput">
+							  </div>
+								<button type="submit" class="formButton">Load</button>
+								<button type="button" class="formButton" onclick="addToSt()">To storage</button>
+								<button type="button" class="formButton" onclick="delInSt()">Delete storage</button>
+							</form>
+
 
 						</article>
 
 					</div>
 
-					<aside class="rightAside _nb">
+					<aside class="rightAside _nb" id="rightAside">
 						<p>Meaning for different planets(km/s):</p>
 						<ul>
 							<li>Sun - 437.047</li>
@@ -229,7 +240,7 @@
 
 		<footer class="footer _nb">
 
-			<div class="goodbye">
+			<div class="goodbye" onselect="selecty()">
 				<h4>Goodbye!!!</h4>
 			</div>
 

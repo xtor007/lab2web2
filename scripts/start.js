@@ -1,4 +1,5 @@
 window.onload = function() {
+
   //change 2 and 6 block
   let block2 = document.querySelector("header");
   let block6 = document.querySelector("footer");
@@ -33,6 +34,15 @@ window.onload = function() {
       inputs[i].onfocus = elemFocus;
       inputs[i].onblur = elemNotFocus;
   }
+
+  //load from localStorage
+  let block4 = document.getElementsByClassName("rightAside");
+  console.log(block4[0].innerHTML)
+  let lsi = localStorage.getItem('imgs')
+  if (lsi !== null) {
+    block4[0].innerHTML +=  localStorage.getItem('imgs')
+  }
+  console.log(block4[0].innerHTML)
 }
 
 function parsCook(name) {

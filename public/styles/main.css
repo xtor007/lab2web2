@@ -55,6 +55,14 @@ a {
   text-align: center;
 }
 
+.leftAside img {
+  width: 100%;
+}
+
+.rightAside img {
+  width: 100%;
+}
+
 .mainBodyWithHeader {
   position: relative;
   right: 0%;
