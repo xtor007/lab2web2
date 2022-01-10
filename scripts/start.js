@@ -37,12 +37,10 @@ window.onload = function() {
 
   //load from localStorage
   let block4 = document.getElementsByClassName("rightAside");
-  console.log(block4[0].innerHTML)
   let lsi = localStorage.getItem('imgs')
   if (lsi !== null) {
     block4[0].innerHTML +=  localStorage.getItem('imgs')
   }
-  console.log(block4[0].innerHTML)
 }
 
 function parsCook(name) {
